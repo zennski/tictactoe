@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.tic-tac-toe {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  padding: 10px;
+  background-color: #39FF14;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cell[value="X"] {
+  font-size: 80px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cell[value="O"] {
+  font-size: 80px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cell:hover {
+  color: #fff; 
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.winning-cell {
+  color: red;
+  background-color: red;
+}
